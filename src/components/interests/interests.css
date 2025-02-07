@@ -1,0 +1,78 @@
+.container.interests__container {
+  padding-bottom: 3rem;
+}
+
+.swiper {
+  height: 60rem;
+}
+
+
+.interest {
+  background-image: url(../../../src/assets/interestTexture.jpg);
+  background-size: auto;
+  background-repeat: repeat;
+  background-position-x: center;
+  padding: 2rem; 
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.swiper-slide img {
+  max-height: 800px;
+  width: auto;
+
+}
+
+.title {
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0rem;
+  margin: 0.5rem;
+  color: var(--color-primary);
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  background: var(--color-primary);
+}
+
+/* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
+@media screen and (max-width: 1024px) {
+
+  .swiper-slide img {
+        width: auto;
+  }
+
+}
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 600px) {
+  .container.interests__container {
+    width: 90%;
+  }
+
+  .swiper {
+    height: 80vh;
+  }
+
+  .swiper-slide img {
+    width: 110%;
+  }
+
+
+}
