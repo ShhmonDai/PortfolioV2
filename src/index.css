@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100;200;300;400;500&display=swap');
 
+@tailwind utilities;
+
+
 @font-face {
     font-family: 'BrushFont';
     src: url(../src/assets/Brushes/brushes-webfont.woff2) format('woff2'),
@@ -120,7 +123,7 @@ a:hover {
     transition: var(--transition);
 }
 
-.btn::hover {
+.btn:hover {
     background: var(--color-white);
     color: var(--color-bg);
     border-color: transparent;

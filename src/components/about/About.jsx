@@ -11,22 +11,10 @@ const About = () => {
   return (
     <section id='about'>
 
-    {/* Animated Clouds. 
-
-      <div className="clouds">
-        <div className="cloud" id="cloud1"></div>
-        <div className="cloud2" id="cloud2"></div>
-        <div className="cloud" id="cloud3"></div>
-        <div className="cloud2" id="cloud4"></div>
-        <div className="cloud" id="cloud5"></div>
-      </div>
-      
-      */}
-
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className="container about__container">
+      <div className='container about__container'>
 
         
         <div className="about__me">
@@ -65,17 +53,19 @@ const About = () => {
         </div>
         
 
-        <div className="about__content">
-          <div className="about__cards">
 
-            <article className='about__card'>
+        <div className="about__content">
+
+          <div className="flex flex-col items-center sm:items-stretch sm:justify-center gap-2 sm:flex-row">
+
+            <article className='about__card w-full sm:w-[45%] flex flex-col items-center bg-[#004c4a] border-2 rounded-t-3xl px-4 py-3 text-center hover:bg-transparent hover:border-(--color-primary)'>
               <FaGraduationCap className='about__icon'/>
               <h5>Hunter College</h5>
               <small><BsDot className='about__icon2' />Bachelor of Arts in Computer Science</small>
-              <small><BsDot className='about__icon2' />Math Minor</small>
+              <small><BsDot className='about__icon2' />Minor in Math</small>
             </article>
 
-            <article className='about__card'>
+            <article className='about__card w-full sm:w-[45%] flex flex-col items-center bg-[#004c4a] border-2 rounded-t-3xl px-4 py-3 text-center hover:bg-transparent hover:border-(--color-primary)'>
               <FaAward className='about__icon' />
               <h5>Art & Design High School</h5>
               <small><BsDot className='about__icon2' />Illustration Major</small>
@@ -109,6 +99,7 @@ const About = () => {
 
         </div>
       </div>
+      
     </section>
   )
 }

@@ -7,13 +7,13 @@ import { SiMysql } from 'react-icons/si'
 import { SiHtml5 } from 'react-icons/si'
 import { SiBootstrap } from 'react-icons/si'
 import { SiPhp } from 'react-icons/si'
-import { SiAmazonaws } from 'react-icons/si'
+import { SiAmazonwebservices } from "react-icons/si";
 import { SiExpress } from 'react-icons/si'
 import { SiAndroidstudio } from 'react-icons/si'
 import { SiCplusplus } from 'react-icons/si'
-import { SiJava } from 'react-icons/si'
-import { SiVisualstudiocode } from 'react-icons/si'
+import { DiVisualstudio } from "react-icons/di";
 import { SiJavascript } from 'react-icons/si'
+import { DiJava } from "react-icons/di";
 
 const Experience = () => {
   return (
@@ -98,7 +98,7 @@ const Experience = () => {
             </article>
 
             <article className='experience__details'>
-              <SiAmazonaws className='experience__details-icon' />
+              <SiAmazonwebservices className='experience__details-icon' />
               <div>
                 <h4>AWS EC2</h4>
                 
@@ -140,7 +140,7 @@ const Experience = () => {
             </article>
 
             <article className='experience__details'>
-              <SiJava className='experience__details-icon' />
+              <DiJava className='experience__details-icon' />
               <div>
                 <h4>Java</h4>
 
@@ -148,7 +148,7 @@ const Experience = () => {
             </article>
 
             <article className='experience__details'>
-              <SiVisualstudiocode className='experience__details-icon' />
+              <DiVisualstudio className='experience__details-icon' />
               <div>
                 <h4>Visual Studio Code</h4>
 

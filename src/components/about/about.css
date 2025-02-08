@@ -24,68 +24,6 @@
 
 }
 
-.clouds {
-    max-height: 0rem;
-    overflow: visible;
-}
-
-.cloud {
-    position: relative;
-    background: url(../../../src/assets/cloud2.png) no-repeat;
-    background-size: contain;
-    overflow: visible;
-    opacity: 0.1;
-}
-
-.cloud2 {
-    position: relative;
-    background: url(../../../src/assets/cloud.png) no-repeat;
-    background-size: contain;
-    overflow: visible;
-    opacity: 0.1;
-}
-
-.cloud#cloud1 {
-    z-index: 2;
-    height: 11rem;
-    background-position-x: -24rem;
-    bottom: -5rem;
-    animation: animateCloud 45s ease-out 1;
-
-}
-
-.cloud2#cloud2 {
-    z-index: 1;
-    height: 11rem;
-    background-position-x: -24rem;
-    bottom: -12rem;
-    animation: animateCloud2 58s ease-in 1;
-}
-
-.cloud#cloud3 {
-    z-index: 1;
-    height: 10.5rem;
-    background-position-x: -24rem;
-    bottom: -20rem;
-    animation: animateCloud 48s linear 1;
-}
-
-.cloud2#cloud4 {
-    z-index: 1;
-    height: 12rem;
-    background-position-x: -26rem;
-    bottom: -26rem;
-    animation: animateCloud2 51s ease-in 1;
-}
-
-.cloud#cloud5 {
-    z-index: 1;
-    height: 10rem;
-    background-position-x: -25rem;
-    bottom: -12rem;
-    animation: animateCloud2 43s ease-out 1;
-}
-
 .about__container {
     padding-top: 4rem;
     display: grid;
@@ -94,7 +32,6 @@
     gap: 2rem;
 
 }
-
 
 /*Profile Picture*/
 
@@ -237,35 +174,6 @@
 
 /* CARDS */
 
-.about__cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    z-index: 10;
-}
-
-.about__card {
-    background: var(--color-bg-variant);
-    /* 
-    background-image: url(../../../src/assets/bg-textureBorderHeader3.png);
-    background-size: cover;
-    background-position: top;
-    */
-
-    border: 2px solid transparent;
-    border-radius: 1rem 1rem 0 0;
-    padding: 1.5rem 1rem;
-    text-align: center;
-    transition: var(--transition-slow);
-    z-index: 10;
-
-}
-
-.about__card:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-}
 
 .about__icon {
     color: var(--color-primary);
@@ -308,17 +216,12 @@
     border-top: 1px solid;
     border-radius: 0 0 2rem 2rem;
     border-color: rgba(245,187,150, 0.5);
-    backdrop-filter: blur(1px); 
-    background: linear-gradient(180deg,var(--color-bg-variant),transparent,transparent,transparent,transparent);
+    backdrop-filter: blur(10px);
+    background: transparent;
     transition-duration: 500ms;
 
 
-    /* border: 2px solid;
-    border-radius: 0 0 2rem 2rem;
-    border-color: rgba(187, 124, 91, 0.01);
-    backdrop-filter: blur(15px); 
-    background: linear-gradient(0deg,var(--color-bg-variant), transparent,transparent,transparent,transparent); */
-}
+  }
 
 .gradient-box:hover { 
     border-top: 1.5px solid;
@@ -342,39 +245,8 @@
     padding: 1.5rem;
     padding-bottom: 5rem;
 
-
-
-
-    /*
-    background: url(../../../src/assets/bg-textureBorderHeader3.png), linear-gradient(#032929, #032929, transparent);
-    background-size: cover;
-    background-position: top;
-    */
-
 }
 
-@keyframes animateCloud{
-    0% {
-        background-position-x: 200rem;
-
-    }
-
-
-    100% {
-        background-position-x: -30rem;
-
-    }
-}
-
-@keyframes animateCloud2{
-    0% {
-        background-position-x: 170rem;
-    }
-
-    100% {
-        background-position-x: -30rem;
-    }
-}
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) ========= */
 

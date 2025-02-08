@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="light"/>
     <meta
@@ -27,8 +27,9 @@
       content="Portfolio website of Szymon Pozniewski"
     />
 
-    <style type="text/css">
+    <link rel="stylesheet" href="src/index.css">
 
+    <style type="text/css">
       body {
         height: 100%;
         margin: 0;
@@ -37,7 +38,7 @@
       }
     
       body {
-        -webkit-font-smoothing: antialiased; 
+        -webkit-font-smoothing: antialiased;
       }
     
       .ipl-progress-indicator.available {
@@ -58,8 +59,8 @@
       }
     
       .insp-logo-frame {
-        color:#f5bb96;
-
+        color: #f5bb96;
+    
         display: -webkit-flex;
         display: -moz-flex;
         display: flex;
@@ -76,9 +77,7 @@
         animation: fadein 2s linear;
       }
     
-      .insp-logo-frame-img {
-
-      }
+      .insp-logo-frame-img {}
     
       .ipl-progress-indicator-head {
         background-color: #0a161e;
@@ -122,19 +121,19 @@
         -moz-align-self: center;
         align-self: center
       }
-
+    
       .svg-icon {
         width: 5rem;
         height: 5rem;
         animation: App-logo-spin infinite 10s linear;
       }
-
+    
       .svg-icon path {
         fill: #f5bb96;
       }
-
     
- 
+    
+    
     
       @keyframes App-logo-spin {
         from {
@@ -145,7 +144,7 @@
           transform: rotate(360deg)
         }
       }
-
+    
       @keyframes App-logo-pulse {
         0% {
           opacity: 1
@@ -154,7 +153,7 @@
         50% {
           opacity: 0
         }
-
+    
         100% {
           opacity: 1
         }
@@ -229,62 +228,59 @@
           transform: translate(100%) scaleX(.1)
         }
       }
-
+    
       /*
-      @media screen and (min-width: 600px) {
-        .svg-icon {
-          visibility: hidden;
-        }
-      }
-      */
-
+          @media screen and (min-width: 600px) {
+            .svg-icon {
+              visibility: hidden;
+            }
+          }
+          */
+    
       @media screen and (max-width: 600px) {
         .insp-logo-frame-svg {
           visibility: hidden;
         }
       }
-
     </style>
-
 
     <title>Szymon Pozniewski</title>
     
   </head>
   <body>
-    
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
     <div class="ipl-progress-indicator" id="ipl-progress-indicator">
-
+    
       <div class="ipl-progress-indicator-head">
         <div class="first-indicator"></div>
         <div class="second-indicator"></div>
       </div>
-
+    
       <div class="insp-logo-frame">
-
+    
         <svg class="svg-icon" viewBox="0 0 20 20">
           <path fill="none" d="M3.183,9.381H0.704v1.239h2.479V9.381z M2.989,16.135l0.876,0.877l1.752-1.754l-0.876-0.875L2.989,16.135z
-                	 M17.012,3.866l-0.877-0.876l-1.752,1.752l0.875,0.876L17.012,3.866z M10.62,0.705H9.38v2.479h1.239V0.705z M5.618,4.742
-                	L3.865,2.989L2.989,3.866l1.753,1.752L5.618,4.742z M14.383,15.258l1.752,1.754l0.877-0.877l-1.754-1.752L14.383,15.258z
-                	M9.38,19.297h1.239v-2.48H9.38V19.297z M16.816,9.381v1.239h2.479V9.381H16.816z M10,5.042c-2.738,0-4.958,2.22-4.958,4.958
-                	c0,2.738,2.22,4.959,4.958,4.959c2.738,0,4.958-2.221,4.958-4.959C14.958,7.263,12.738,5.042,10,5.042z M10,13.727
-                	c-2.058,0-3.726-1.668-3.726-3.727c0-2.058,1.668-3.726,3.726-3.726c2.059,0,3.727,1.668,3.727,3.726
-                	C13.727,12.059,12.059,13.727,10,13.727z"></path>
+                    	 M17.012,3.866l-0.877-0.876l-1.752,1.752l0.875,0.876L17.012,3.866z M10.62,0.705H9.38v2.479h1.239V0.705z M5.618,4.742
+                    	L3.865,2.989L2.989,3.866l1.753,1.752L5.618,4.742z M14.383,15.258l1.752,1.754l0.877-0.877l-1.754-1.752L14.383,15.258z
+                    	M9.38,19.297h1.239v-2.48H9.38V19.297z M16.816,9.381v1.239h2.479V9.381H16.816z M10,5.042c-2.738,0-4.958,2.22-4.958,4.958
+                    	c0,2.738,2.22,4.959,4.958,4.959c2.738,0,4.958-2.221,4.958-4.959C14.958,7.263,12.738,5.042,10,5.042z M10,13.727
+                    	c-2.058,0-3.726-1.668-3.726-3.727c0-2.058,1.668-3.726,3.726-3.726c2.059,0,3.727,1.668,3.727,3.726
+                    	C13.727,12.059,12.059,13.727,10,13.727z"></path>
         </svg>
-
-        <svg  width="300" class="insp-logo-frame-svg" height="300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 100">
+    
+        <svg width="300" class="insp-logo-frame-svg" height="300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 100">
           <text fill="#f5bb96" font-size="100" font-family="Verdana" x="0" y="0">Welcome</text>
         </svg>
-
-
-
+    
+    
+    
       </div>
-
+    
     </div>
 
-
     <div id="root"></div>
-
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

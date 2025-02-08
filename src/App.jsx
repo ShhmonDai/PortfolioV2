@@ -1,4 +1,4 @@
-import React from 'react';
+import {React } from 'react';
 import Header from './components/header/Header'
 import Nav from './components/nav/Nav'
 import About from './components/about/About'
@@ -10,45 +10,33 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
 
+export default function App() {
+  
 
-class App extends React.Component {
+  const spinner = document.getElementById("ipl-progress-indicator");
 
-
-  authenticate() {
-    return new Promise(resolve => setTimeout(resolve, 3000)) // 2 seconds
+  if (spinner) {
+    setTimeout(() => {
+      // fade out
+      spinner.classList.add('available')
+      setTimeout(() => {
+        // remove from DOM
+        spinner.outerHTML = ''
+      }, 3000)
+    }, 2000)
   }
 
-  componentDidMount(){
-    this.authenticate().then(() => {
-      const ele = document.getElementById('ipl-progress-indicator')
-      if (ele) {
-        // fade out
-        ele.classList.add('available')
-        setTimeout(() => {
-          // remove from DOM
-          ele.outerHTML = ''
-        }, 3000)
-      }
-    })
-  }
-
-
-  render() {
-    return (
-
-      <>
-        <Header /> 
-        <Nav />
-        <Portfolio />
-        <About />
-        <Experience />
-        <Services />
-        <Interests />
-        <Contact />
-        <Footer />
-      </>
-    )
-  }
+  return (
+    <>
+      <Header />
+      <Nav />
+      <Portfolio />
+      <About />
+      <Experience />
+      <Services />
+      <Interests />
+      <Contact />
+      <Footer />
+    </>
+  );
 }
-
-export default App
