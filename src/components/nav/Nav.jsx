@@ -20,7 +20,7 @@ const Nav = () => {
   return (
     <nav>
       <a href="#header" ><AiOutlineHome /> Home</a>
-      <a href="#portfolio" ><RiServiceLine /> Portfolio</a>
+      <a href="#portfolioNav" ><RiServiceLine /> Portfolio</a>
       <a href="#about" ><AiOutlineUser/> About</a>
       <a href="#experience" ><BiBook/> Skills</a>
       <a href="#contact" ><BiMessageSquareDetail/> Contact</a>

@@ -1,6 +1,7 @@
 # private
 /src/components/contact/contact.jsx
 /build.zip
+scrapfile.jsx
 
 # dependencies
 /node_modules

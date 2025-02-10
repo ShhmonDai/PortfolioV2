@@ -101,7 +101,7 @@ const Portfolio = () => {
 
       </div>
 
-      <h5>My Recent Work</h5>
+      <h5 id='portfolioNav'>My Recent Work</h5>
       <h2>Portfolio</h2>  
 
       <div className="container portfolio__container">
@@ -125,7 +125,9 @@ const Portfolio = () => {
         }
       </div>
 
-      <div className="divider"> </div>
+      <div className=''>
+        <img src="/aboutTop.png" alt="BG" />
+      </div>
 
     </section>
   )
