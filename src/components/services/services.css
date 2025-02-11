@@ -5,6 +5,10 @@
   justify-items: center;
 }
 
+#services {
+  padding-bottom: 0;
+}
+
 .service {
   background: linear-gradient(180deg, var(--color-bg-variant),transparent);
   border-radius: 0 0 2rem 2rem;
@@ -53,6 +57,10 @@
   font-size: 0.9rem;
 }
 
+.border_bottom {
+  padding-top: 5rem;
+}
+
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
   .services__container {
@@ -63,6 +71,7 @@
   .service {
     height: auto;
   }
+  
 }
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */

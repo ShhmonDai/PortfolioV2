@@ -1,6 +1,7 @@
 import React from 'react'
 import './portfolio.css'
 
+import { FaAward } from 'react-icons/fa'
 
 import IMG1 from '../../assets/BloomPic.jpg'
 import IMG2 from '../../assets/FJPic.jpg'
@@ -19,17 +20,22 @@ import GIF5 from '../../assets/BlogGif.gif'
 import GIF6 from '../../assets/HorizonGif.gif'
 import GIF7 from '../../assets/BloomV2Gif.gif'
 
-const data = [
+const dataFeatured = [
   {
-    id: 3,
+    id: 10,
     image: IMG7,
     gif: GIF7,
     title: 'BLOOM - Goal & Habit Visualizer and Tracker',
-    tech: 'React.JS - Node.JS - MongoDB - P5.JS - Firebase - Express.JS - JWT & Bcrypt - Tailwind',
+    description1: 'Habit and Goal tracker with progress visualization as a growing tree. With NLU journal entry analysis of emotions and sentiments',
+    description2: '',
+    tech: 'React.JS - Node.JS - MongoDB - P5.JS - Firebase - Express.JS - JWT & Bcrypt - Tailwind - IBM Machine Learning API',
     github: 'https://github.com/ShhmonDai/Bloom-V2---react-MERN',
     demo: 'https://bloomhabits.com/',
     demo_type: 'Website'
-  },
+  }
+]
+
+const data = [
   {
     id: 1,
     image: IMG5,
@@ -71,16 +77,6 @@ const data = [
     demo_type: 'Website'
   },
   {
-    id: 6,
-    image: IMG3,
-    gif: GIF3,
-    title: 'Healthcare Centers Database System Design - Complete Mysql Implementation, ER, UML & Relational Schemas',
-    tech: 'MySQL - SQL Plus',
-    github: 'https://github.com/ShhmonDai/Healthcare-Centers-MySQL',
-    demo: 'https://github.com/ShhmonDai/Healthcare-Centers-MySQL/blob/main/ProjectPresentation.pdf',
-    demo_type: 'Presentation'
-  },
-  {
     id: 7,
     image: IMG1,
     gif: GIF1,
@@ -103,6 +99,40 @@ const Portfolio = () => {
 
       <h5 id='portfolioNav'>My Recent Work</h5>
       <h2>Portfolio</h2>  
+
+      <div className="container portfolio__container featuredContainer grid grid-cols-6 2xl:grid-cols-8 ">
+        {
+          dataFeatured.map(({ id, image, gif, title, description1, description2, tech, github, demo, demo_type }) => {
+            return (
+              <article key={id} className='portfolio__item featuredItem relative col-span-6  2xl:col-span-6 2xl:col-start-2 shadow-[0_0_20px_rgba(0,0,0,0.40)]'>
+
+                <h3 className='absolute -bottom-14 inset-x-0 text-center text-2xl text-[rgb(245,187,150)]'><FaAward/></h3>
+
+                <div className='featuredItem flex flex-col xl:flex-row justify-around lg:justify-center lg:gap-5'>
+
+                  <div className="portfolio__item-image flex flex-col justify-center">
+                    <img src={image} alt={title} onMouseOver={e => e.currentTarget.src = gif} onMouseOut={e => e.currentTarget.src = image} />
+                  </div>
+                  
+                  <div className='flex flex-col justify-start lg:justify-between xl:max-w-[50%]'>
+                    <h3>{title}</h3>
+                    <div className='mb-3 text-gray-200'>
+                      <p> {description1} </p>
+                    </div>
+                    <h4>{tech}</h4>
+                    <div className="portfolio__item-cta lg:mt-10  lg:mb-5">
+                      <a href={github} className='btn' target='_blank' rel="noreferrer">Github</a>
+                      <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer">{demo_type}</a>
+                    </div>
+                  </div>
+
+                </div>
+
+              </article>
+            )
+          })
+        }
+      </div>
 
       <div className="container portfolio__container">
         {

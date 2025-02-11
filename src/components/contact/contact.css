@@ -1,5 +1,10 @@
 #contact {
   min-height: 750px;
+  padding-top: 0;
+}
+
+#contact h5 {
+  padding-top: 3rem;
 }
 
 .container.contact__container {

@@ -2,16 +2,30 @@
   padding-bottom: 3rem;
 }
 
+.artBackground {
+  background-image: url(../../../src/assets/interestTexture3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
 .swiper {
   height: 60rem;
 }
 
+.swiper-button-prev:after, .swiper-button-next:after {
+  color: black;
+}
+
+
+
+#interests {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
 
 .interest {
-  background-image: url(../../../src/assets/interestTexture.jpg);
-  background-size: auto;
-  background-repeat: repeat;
-  background-position-x: center;
   padding: 2rem; 
 }
 
@@ -37,6 +51,21 @@
 
 }
 
+#interests>h5 {
+  font-family: 'BrushFont', Arial, sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+}
+
+#interests>h2 {
+  font-family: 'BrushFont', Arial, sans-serif;
+  font-size: 6rem;
+  text-align: center;
+  color: black;
+  margin-bottom: 3rem;
+}
+
 .title {
 
   position: absolute;
@@ -44,19 +73,32 @@
   transform: translateX(-50%);
   bottom: 0rem;
   margin: 0.5rem;
-  color: var(--color-primary);
+  color: white;
+  text-shadow: 1px 1px 7px black;
+
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
-  background: var(--color-primary);
+  background: black;
 }
 
 /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
 @media screen and (max-width: 1024px) {
 
+  .artBackground {
+    background-image: url(../../../src/assets/interestTexture3.png);
+    background-size: 100% 100%;
+    
+  }
+
   .swiper-slide img {
         width: auto;
   }
+
+  .swiper-button-prev:after, .swiper-button-next:after {
+      color: white;
+      text-shadow: 1px 1px 7px black;
+    }
 
 }
 
@@ -66,12 +108,44 @@
     width: 90%;
   }
 
+  .artBackground {
+    background-image: url(../../../src/assets/interestTexture3.png);
+    background-size: 110% 100%;
+
+  }
+
   .swiper {
     height: 80vh;
   }
 
   .swiper-slide img {
     width: 110%;
+  }
+
+  #interests>h5 {
+    font-family: 'BrushFont', Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+  }
+
+  #interests>h2 {
+    font-size: 4rem;
+    padding: 0 1rem;
+    padding-bottom: 0;
+  }
+
+
+}
+
+
+/* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
+@media screen and (max-width: 400px) {
+
+  #interests>h2 {
+    font-size: 3rem;
+    padding: 0rem 0rem;
+    margin-bottom: 0;
   }
 
 

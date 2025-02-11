@@ -7,52 +7,61 @@ import AVTR4 from '../../assets/Art04.jpg'
 import AVTR5 from '../../assets/Art05.jpg'
 
 // import Swiper core and required modules
-import { Pagination } from 'swiper';
+import { Navigation, Pagination, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/effect-fade';
 
 
 
 const data = [
   {
     image: AVTR1,
-    title: 'Book Illustration',
+    title: 'Book Illustration - 2013',
   },
   {
     image: AVTR2,
-    title: 'Book Illustration',
+    title: 'Book Illustration - 2013',
   },
   {
     image: AVTR3,
-    title: 'Berserk Fan Art',
+    title: 'Berserk Fan Art - 2020',
    
   },
   {
     image: AVTR4,
-    title: 'Concept Art',
+    title: 'Concept Art - 2012',
   },
   {
     image: AVTR5,
-    title: 'Game Sketch',
+    title: 'Game Sketch - 2011',
   },
 ]
 
 
 const Interests = () => {
   return (
-    <section id='interests'>
+    <div id='interests' className='bg-white bg-[url("/ParallaxPaper.png")]'>
       <h5>Hobbies</h5>
       <h2>Illustrations and Paintings</h2>
 
+      <div className='artBackground'>
+
       <Swiper className="container interests__container" 
       // install Swiper modules
-      modules={[Pagination]} spaceBetween={50}
+      modules={[Pagination, Navigation, EffectFade]} 
+      spaceBetween={50}
       slidesPerView={1}
-  
-      pagination={{ clickable: true }}>
+      navigation={true}
+      loop={true}
+      grabCursor={true}
+      fadeEffect={{ crossFade: true }}
+      effect={'fade'}
+      pagination={{ clickable: true, dynamicBullets: true }}>
         {
           data.map(({image, title}, index) => {
             return (
@@ -67,7 +76,11 @@ const Interests = () => {
           })
         }
       </Swiper>
-    </section>
+      
+      </div>
+
+
+    </div>
   )
 }
 

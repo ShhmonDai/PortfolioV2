@@ -85,6 +85,12 @@ const Services = () => {
         </article>
         {/* END OF CONTENT CREATION */}
       </div>
+
+      <div className='border_bottom'>
+        <img src="/artTop2.png" alt="BG" />
+      </div>
+
+
     </section>
   )
 }

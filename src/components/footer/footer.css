@@ -133,9 +133,16 @@ footer .wave#wave4 {
 
 
 /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .footer_body {
     background-size: 100%, auto;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+
+  .footer_body {
+    background-size: 90%, 50%;
   }
 }
 
