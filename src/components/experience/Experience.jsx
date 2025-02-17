@@ -14,6 +14,13 @@ import { SiCplusplus } from 'react-icons/si'
 import { DiVisualstudio } from "react-icons/di";
 import { SiJavascript } from 'react-icons/si'
 import { DiJava } from "react-icons/di";
+import { SiMongodb } from "react-icons/si";
+import { RiFirebaseFill } from "react-icons/ri";
+import { SiTailwindcss } from "react-icons/si";
+import { FaKey } from "react-icons/fa";
+import { SiP5Dotjs } from "react-icons/si";
+import { SiVite } from "react-icons/si";
+
 
 const Experience = () => {
   return (
@@ -71,6 +78,38 @@ const Experience = () => {
 
               </div>
             </article>
+
+            <article className='experience__details'>
+              <SiMongodb className='experience__details-icon' />
+              <div>
+                <h4>MongoDB</h4>
+
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <RiFirebaseFill className='experience__details-icon' />
+              <div>
+                <h4>Firebase</h4>
+
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <SiTailwindcss className='experience__details-icon' />
+              <div>
+                <h4>Tailwind</h4>
+
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <SiP5Dotjs className='experience__details-icon' />
+              <div>
+                <h4>P5.js</h4>
+
+              </div>
+            </article>
            
           </div>
         </div>
@@ -78,16 +117,8 @@ const Experience = () => {
 
         {/* BEGINNING OF INTERMEDIATE/BASIC */}
         <div className="experience__backend">
-          <h3>Prior Experience</h3>
+          <h3>Experienced</h3>
           <div className="experience__content">
-
-            <article className='experience__details'>
-              <SiBootstrap className='experience__details-icon' />
-              <div>
-                <h4>Bootstrap</h4>
-                
-              </div>
-            </article>
 
             <article className='experience__details'>
               <SiPhp className='experience__details-icon' />
@@ -110,6 +141,22 @@ const Experience = () => {
               <div>
                 <h4>Express</h4>
                 
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <FaKey className='experience__details-icon' />
+              <div>
+                <h4>JWT</h4>
+
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <SiBootstrap className='experience__details-icon' />
+              <div>
+                <h4>Bootstrap</h4>
+
               </div>
             </article>
 
@@ -151,6 +198,14 @@ const Experience = () => {
               <DiVisualstudio className='experience__details-icon' />
               <div>
                 <h4>Visual Studio Code</h4>
+
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <SiVite className='experience__details-icon' />
+              <div>
+                <h4>vite</h4>
 
               </div>
             </article>
