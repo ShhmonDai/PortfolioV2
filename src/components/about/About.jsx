@@ -103,7 +103,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='z-10 -mb-16'>
+      <div className='z-10 -mb-16 lg:-mb-36'>
         <img src="/aboutBottom.png" alt="BGbottom" className='z-10' />
       </div>
       
