@@ -20,7 +20,7 @@
 }
 
 .portfolio__container.featuredContainer {
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
     
 }
 
@@ -30,6 +30,8 @@
     border-radius: 2rem;
     border: 2px solid transparent;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio__item.featuredItem {
@@ -66,6 +68,7 @@
 }
 
 .portfolio__item-cta {
+    margin-top:auto;
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;

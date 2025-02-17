@@ -77,26 +77,25 @@ const About = () => {
 
           </div>
 
-          <div className="gradient-box">
-            <h2>I am a New York City based Software & Web Developer</h2>
+          <div className="gradient-box py-10 px-4">
+            <h2 className='font-light'>A little About Me</h2>
 
-            <p>
-              As a developer I enjoy the entire process of bringing products to life. Starting from scratch with just an idea, wireframing, designing databases,
-              coming up with comfortable plus efficient UI/UX and the whole coding process to grow the idea into a finished working product that all people involved
-              with it's creation can feel proud of.
+            <p className='font-light text-gray-200'>
+              Hi, I'm Szymon, a New York City-based software and web developer with a unique blend of creative and hands-on experience. <br /><br />
+             My diverse history, ranging from carpentry and construction, painting and illustration to being a certified personal trainer, has shaped my problem-solving skills and ability to think outside the box, making me not just a developer, but a creator who builds with purpose. 
+             Let's bring your ideas to life!
 
-              <br /><br />
+            </p>
 
-              My background in art and design helps me stay creative and on top of the front-end practices while strong technical curiosity pushes me towards
-              continuously learning the proper back-end tools and implementations.
 
-              <br /><br />
+            <h3 className='font-light mt-10'>Neat facts about me:</h3>
+            <h4 className='text-sm mb-5'>(Or at least I think they are neat)</h4>
+            <p className='font-light text-gray-200'>
+            I love old school RPG games (BG2, Morrowind), fancy darker beers (St Bernardus Tripel), weightlifting and fantasy books (LOTR, The Stormlight Archive), including alot of Chinese webnovels (Lord Of Mysteries) 
 
-              Currently I am focusing on improving my Java, Javascript and Express.JS knowledge
+            <br /><br />
 
-              <br /><br />
-
-              <a href={CV} target="_blank" rel="noopener noreferrer" className='btn'>Download CV</a>
+            <a href={CV} target="_blank" rel="noopener noreferrer" className='relative btn z-50'>Download CV</a>
 
             </p>
           </div>
@@ -104,8 +103,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className=''>
-        <img src="/aboutBottom.png" alt="BG" />
+      <div className='z-10 -mb-16'>
+        <img src="/aboutBottom.png" alt="BGbottom" className='z-10' />
       </div>
       
     </section>

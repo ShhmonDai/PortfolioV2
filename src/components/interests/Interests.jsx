@@ -45,7 +45,7 @@ const data = [
 
 const Interests = () => {
   return (
-    <div id='interests' className='bg-white bg-[url("/ParallaxPaper.png")]'>
+    <div id='interests' className='bg-white bg-[url("/ParallaxPaper5.png")] -my-1'>
       <h5>Hobbies</h5>
       <h2>Illustrations and Paintings</h2>
 

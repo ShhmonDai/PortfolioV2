@@ -87,7 +87,7 @@ const Services = () => {
       </div>
 
       <div className='border_bottom'>
-        <img src="/artTop2.png" alt="BG" />
+        <img src="/artTop5.png" alt="BG" />
       </div>
 
 

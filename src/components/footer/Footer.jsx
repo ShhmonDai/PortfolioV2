@@ -38,7 +38,7 @@ const Footer = () => {
           <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <p>©2024 Szymon Pozniewski</p>
+        <p>©2025 Szymon Pozniewski</p>
 
       </footer>
     </div>

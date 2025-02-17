@@ -96,6 +96,7 @@
     color: var(--color-primary);
 }
 
+
 .about__me .content .details a {
     color: var(--color-primary);
     font-size: 1.5rem;
@@ -177,28 +178,20 @@
 }
 
 .about__icon2 {
-
     color: var(--color-primary);
     font-size: 2rem;
     margin-top: -0.2rem;
 }
 
 
-.gradient-box h2 {
-    font-weight: 100;
-    padding: 1.5rem 1.5rem 0 1.5rem;
-    margin: 2rem 0 0 0;
+.gradient-box h2, h3 {
     color: var(--color-primary);
-    text-align: center;
 }
 
-.gradient-box p {
-    font-weight: 100;
-    color: var(--color-white);
-    padding: 1.5rem;
-    padding-bottom: 5rem;
-
+.gradient-box h4 {
+    color: var(--color-light);
 }
+
 
 
 
@@ -288,7 +281,6 @@
     .about__content p {
         margin: 1.5rem 0;
         font-size: 1rem;
-
     }
 
 
