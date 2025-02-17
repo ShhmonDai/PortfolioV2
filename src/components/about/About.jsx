@@ -78,20 +78,19 @@ const About = () => {
           </div>
 
           <div className="gradient-box py-10 px-4">
-            <h2 className='font-light'>A little About Me</h2>
+            <h2 className='font-light mb-5'>A little About Me</h2>
 
             <p className='font-light text-gray-200'>
-              Hi, I'm Szymon, a New York City-based software and web developer with a unique blend of creative and hands-on experience. <br /><br />
-             My diverse history, ranging from carpentry and construction, painting and illustration to being a certified personal trainer, has shaped my problem-solving skills and ability to think outside the box, making me not just a developer, but a creator who builds with purpose. 
-             Let's bring your ideas to life!
-
+              " Szymon (Pronounced: Shh-mohn) is a New York City-based software and web developer with a unique blend of creative and hands-on experience. <br /><br />
+             His diverse history, ranging from carpentry and construction, painting and illustration to being a certified personal trainer, has shaped his problem-solving skills and ability to think outside the box, making him not just a developer, but a creator who builds with purpose. "
             </p>
+            <p className='font-light text-gray-200 text-right'>-My friend, ChatGPT</p>
 
 
             <h3 className='font-light mt-10'>Neat facts about me:</h3>
             <h4 className='text-sm mb-5'>(Or at least I think they are neat)</h4>
             <p className='font-light text-gray-200'>
-            I love old school RPG games (BG2, Morrowind), fancy darker beers (St Bernardus Tripel), weightlifting and fantasy books (LOTR, The Stormlight Archive), including alot of Chinese webnovels (Lord Of Mysteries) 
+            I love old school RPG games (BG2, Morrowind), fancy darker beers (St Bernardus Tripel), weightlifting and fantasy books (LOTR, The Stormlight Archive), including alot of Chinese webnovels (Lord Of Mysteries). I used to draw a bit when I was younger 
 
             <br /><br />
 
