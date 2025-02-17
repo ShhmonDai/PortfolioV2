@@ -68,8 +68,7 @@
 }
 
 .portfolio__item-cta {
-    margin-top:auto;
-    display: flex;
+    margin-top: auto;
     gap: 1rem;
     margin-bottom: 1rem;
 }
