@@ -58,18 +58,18 @@ const About = () => {
 
 
 
-        <div className="about__content">
+        <div className="about__content flex flex-col">
 
-          <div className="flex flex-col items-center sm:items-stretch sm:justify-center gap-2 sm:flex-row">
+          <div className="flex flex-col gap-2 sm:flex-row">
 
-            <article className='about__card w-full sm:w-[45%] flex flex-col items-center bg-[#004c4a] border-2 rounded-t-3xl px-4 py-3 text-center'>
+            <article className='about__card w-full sm:w-[50%] flex flex-col items-center bg-[#004c4a] border-2 rounded-t-3xl px-4 py-3 text-center'>
               <FaGraduationCap className='about__icon' />
               <h5>Hunter College</h5>
               <small><BsDot className='about__icon2' />Bachelor of Arts in Computer Science</small>
               <small><BsDot className='about__icon2' />Minor in Math</small>
             </article>
 
-            <article className='about__card w-full sm:w-[45%] flex flex-col items-center bg-[#004c4a] border-2 rounded-t-3xl px-4 py-3 text-center'>
+            <article className='about__card w-full sm:w-[50%] flex flex-col items-center bg-[#004c4a] border-2 sm:rounded-t-3xl px-4 py-3 text-center'>
               <FaAward className='about__icon' />
               <h5>Art & Design High School</h5>
               <small><BsDot className='about__icon2' />Illustration Major</small>
@@ -77,20 +77,36 @@ const About = () => {
 
           </div>
 
-          <div className="gradient-box py-10 px-4">
-            <h2 className='font-light mb-5'>A little About Me</h2>
+          <div className="gradient-box pt-10 mb-10 px-6 bg-black/20 rounded-b-2xl">
+            <h2 className='font-light'>Hi, I’m <b>Szymon</b></h2>
+            <h4 className='text-sm mb-10'>Pronounced as Shh-mohn, but feel free to call me Simon</h4>
 
             <p className='font-light text-gray-200'>
-              " Szymon (Pronounced: Shh-mohn) is a New York City-based software and web developer with a unique blend of creative and hands-on experience. <br /><br />
-             His diverse history, ranging from carpentry and construction, painting and illustration to being a certified personal trainer, has shaped his problem-solving skills and ability to think outside the box, making him not just a developer, but a creator who builds with purpose. "
+              I'm a New York City-based <b>software engineer</b> and <b>web developer</b> with a passion for building thoughtful, user-focused digital experiences.
             </p>
-            <p className='font-light text-gray-200 text-right'>-My friend, ChatGPT</p>
 
-
-            <h3 className='font-light mt-10'>Neat facts about me:</h3>
-            <h4 className='text-sm mb-5'>(Or at least I think they are neat)</h4>
             <p className='font-light text-gray-200'>
-            I love old school RPG games (BG2, Morrowind), fancy darker beers (St Bernardus Tripel), weightlifting and fantasy books (LOTR, The Stormlight Archive), including alot of Chinese webnovels (Lord Of Mysteries). I used to draw a bit when I was younger 
+              My journey into software development has been anything but typical. With a background in carpentry, construction, painting, illustration, and even personal training, 
+              I bring a unique blend of creativity, discipline, and hands-on problem-solving to every project. 
+              These experiences have shaped how I approach software: not just as code, but as something built with care, function, and purpose.
+            </p>
+
+            <p className='font-light text-gray-200'>
+              Whether I’m developing full-stack applications or designing intuitive UI systems, 
+              I aim to bridge the gap between logic and creativity — engineering tools that solve real problems and resonate with real people.
+            </p>
+            
+
+
+            <h3 className='font-light mt-10 text-xl'>Neat Facts</h3>
+            <h4 className='text-sm mb-5'>Because Life Isn’t All Code</h4>
+            <p className='font-light text-gray-200'>
+            <ul >
+                <li className='flex flex-row items-center py-2'><BsDot className='about__icon2' />Avid fan of classic RPGs like Baldur’s Gate II and Morrowind</li>
+                <li className='flex flex-row items-center py-2'><BsDot className='about__icon2' />Enthusiast of darker Belgian-style beers (St. Bernardus Tripel is a favorite)</li>
+                <li className='flex flex-row items-center py-2'><BsDot className='about__icon2' />Passionate about weightlifting and long-form fantasy, such as: The Stormlight Archive, LOTR, Lord of Mysteries, and other Chinese web novels</li>
+                <li className='flex flex-row items-center py-2'><BsDot className='about__icon2' />Used to draw and illustrate — now I just sketch in code</li>
+            </ul>
 
             <br /><br />
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import './experience.css'
 
-import { SiReact } from 'react-icons/si'
+import { SiInsomnia, SiPostman, SiReact } from 'react-icons/si'
 import { SiNodedotjs } from 'react-icons/si'
 import { SiMysql } from 'react-icons/si'
 import { SiHtml5 } from 'react-icons/si'
@@ -15,11 +15,12 @@ import { DiVisualstudio } from "react-icons/di";
 import { SiJavascript } from 'react-icons/si'
 import { DiJava } from "react-icons/di";
 import { SiMongodb } from "react-icons/si";
-import { RiFirebaseFill } from "react-icons/ri";
+import { RiFirebaseFill, RiOpenaiFill } from "react-icons/ri";
 import { SiTailwindcss } from "react-icons/si";
 import { FaKey } from "react-icons/fa";
 import { SiP5Dotjs } from "react-icons/si";
 import { SiVite } from "react-icons/si";
+import { TbSql } from 'react-icons/tb'
 
 
 const Experience = () => {
@@ -35,7 +36,7 @@ const Experience = () => {
        
         {/* BEGINNING OF EXPERIENCED */}
         <div className="experience__frontend">
-          <h3>Proficient</h3>
+          <h3>Languages & Frameworks</h3>
           <div className="experience__content">
 
             <article className='experience__details'>
@@ -64,12 +65,21 @@ const Experience = () => {
             </article>
 
             <article className='experience__details'>
-              <SiMysql className='experience__details-icon' />
+              <SiP5Dotjs className='experience__details-icon' />
               <div>
-                <h4>MySQL</h4>
+                <h4>P5.js</h4>
 
               </div>
             </article>
+
+            <article className='experience__details'>
+              <SiExpress className='experience__details-icon' />
+              <div>
+                <h4>Express.js</h4>
+
+              </div>
+            </article>
+
 
             <article className='experience__details'>
               <SiHtml5 className='experience__details-icon' />
@@ -78,6 +88,32 @@ const Experience = () => {
 
               </div>
             </article>
+
+
+            <article className='experience__details'>
+              <SiTailwindcss className='experience__details-icon' />
+              <div>
+                <h4>Tailwind</h4>
+
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <TbSql className='experience__details-icon' />
+              <div>
+                <h4>SQL</h4>
+
+              </div>
+            </article>
+           
+          </div>
+        </div>
+        {/* END OF EXPERIENCED */}
+
+        {/* BEGINNING OF INTERMEDIATE/BASIC */}
+        <div className="experience__backend">
+          <h3>Databases</h3>
+          <div className="experience__content">
 
             <article className='experience__details'>
               <SiMongodb className='experience__details-icon' />
@@ -96,67 +132,20 @@ const Experience = () => {
             </article>
 
             <article className='experience__details'>
-              <SiTailwindcss className='experience__details-icon' />
+              <SiMysql className='experience__details-icon' />
               <div>
-                <h4>Tailwind</h4>
+                <h4>MySQL</h4>
 
               </div>
             </article>
 
-            <article className='experience__details'>
-              <SiP5Dotjs className='experience__details-icon' />
-              <div>
-                <h4>P5.js</h4>
 
-              </div>
-            </article>
-           
-          </div>
-        </div>
-        {/* END OF EXPERIENCED */}
-
-        {/* BEGINNING OF INTERMEDIATE/BASIC */}
-        <div className="experience__backend">
-          <h3>Experienced</h3>
-          <div className="experience__content">
-
-            <article className='experience__details'>
-              <SiPhp className='experience__details-icon' />
-              <div>
-                <h4>PHP</h4>
-                
-              </div>
-            </article>
 
             <article className='experience__details'>
               <SiAmazonwebservices className='experience__details-icon' />
               <div>
                 <h4>AWS EC2</h4>
                 
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              <SiExpress className='experience__details-icon' />
-              <div>
-                <h4>Express</h4>
-                
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              <FaKey className='experience__details-icon' />
-              <div>
-                <h4>JWT</h4>
-
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              <SiBootstrap className='experience__details-icon' />
-              <div>
-                <h4>Bootstrap</h4>
-
               </div>
             </article>
 
@@ -167,37 +156,48 @@ const Experience = () => {
 
         {/* BEGINNING OF GENERAL TOOLS  */}
         <div className="experience__general">
-          <h3>Tech & Languages</h3>
+          <h3>Tools & Concepts</h3>
           <div className="experience__content">
 
+
             <article className='experience__details'>
-              <SiAndroidstudio className='experience__details-icon' />
+              <RiFirebaseFill className='experience__details-icon' />
               <div>
-                <h4>Android Studio</h4>
+                <h4>OAuth 2.0</h4>
+
+              </div>
+            </article>
+
+
+            <article className='experience__details'>
+              <FaKey className='experience__details-icon' />
+              <div>
+                <h4>JWT</h4>
 
               </div>
             </article>
 
             <article className='experience__details'>
-              <SiCplusplus className='experience__details-icon' />
+              <RiOpenaiFill className='experience__details-icon' />
               <div>
-                <h4>C++</h4>
+                <h4>OpenAI API</h4>
+
+              </div>
+            </article>
+
+
+            <article className='experience__details'>
+              <SiInsomnia className='experience__details-icon' />
+              <div>
+                <h4>Insomnia</h4>
 
               </div>
             </article>
 
             <article className='experience__details'>
-              <DiJava className='experience__details-icon' />
+              <SiPostman className='experience__details-icon' />
               <div>
-                <h4>Java</h4>
-
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              <DiVisualstudio className='experience__details-icon' />
-              <div>
-                <h4>Visual Studio Code</h4>
+                <h4>Postman</h4>
 
               </div>
             </article>
@@ -209,6 +209,16 @@ const Experience = () => {
 
               </div>
             </article>
+
+            <article className='experience__details'>
+              <SiAndroidstudio className='experience__details-icon' />
+              <div>
+                <h4>Android Studio</h4>
+
+              </div>
+            </article>
+
+
 
           </div>
         </div>
