@@ -59,8 +59,8 @@ const Header = () => {
         <div className="details">
           <div className="content">
             <span className="text-light text-xs">Also known as</span>
-            <h2>Simon P. Kleino</h2>
-            <h5>Software Developer, Designer, Artist</h5>
+            <h2>Simon Pozniewski</h2>
+            <h5>Software Developer, Project Manager, Designer, Artist</h5>
               <h5>Thanks for stopping by — This space is a collection of the things I build, design, and imagine. Take your time, explore, and feel free to jump into whatever catches your eye.
             </h5>
 
