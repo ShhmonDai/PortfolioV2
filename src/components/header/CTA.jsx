@@ -42,7 +42,7 @@ const CTA = () => {
       {/* ================= PORTFOLIO MODAL ================= */}
       <div
         className={`fixed inset-0 z-50 flex items-end sm:items-center justify-center
-              bg-[#032929]/70 cta-blur
+              bg-gray-400/40 cta-blur
               transition-opacity duration-300
               ${isModalOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
         onClick={() => setIsModalOpen(false)}
@@ -53,7 +53,7 @@ const CTA = () => {
           className={`
       relative w-full sm:w-[92%] max-w-lg
       rounded-t-2xl sm:rounded-xl
-    bg-[#10212a]/70 sm:bg-[#10212a]/50 backdrop-blur-2xl
+    bg-[#10212a]/80 sm:bg-[#10212a]/70 backdrop-blur-2xl
       cta-border
       shadow-[0_10px_40px_rgba(0,0,0,0.45)]
       p-8 text-white

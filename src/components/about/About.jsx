@@ -9,6 +9,7 @@ import { FaGraduationCap } from 'react-icons/fa'
 import { FiInstagram } from 'react-icons/fi'
 import { BsDot } from 'react-icons/bs'
 import CV from '../../assets/cv.pdf'
+import CTA from '../header/CTA'
 
 const About = () => {
   return (
@@ -57,65 +58,127 @@ const About = () => {
         </div>
 
 
+        <div className="about__content flex flex-col gap-12 mb-14">
 
-        <div className="about__content flex flex-col">
+          {/* About + Education */}
+          <div className="grid sm:grid-cols-2 gap-14">
 
-          <div className="flex flex-col gap-2 sm:flex-row">
+            {/* Left: About Text */}
+            <div className='z-20 flex flex-col items-start'>
+              <h2 className="text-3xl font-medium text-[rgb(245,187,150)] mb-2">
+                Hi, I’m Szymon
+              </h2>
 
-            <article className='about__card w-full sm:w-[50%] flex flex-col items-center bg-[#004c4a] border-2 rounded-t-3xl px-4 py-3 text-center'>
-              <FaGraduationCap className='about__icon' />
-              <h5>Hunter College</h5>
-              <small><BsDot className='about__icon2' />Bachelor of Arts in Computer Science</small>
-              <small><BsDot className='about__icon2' />Minor in Math</small>
-            </article>
+              <p className="text-white/80 leading-relaxed">
+                New York City–based professional transitioning into <b className='text-white'>Construction Project Management</b>,
+                combining a technical background in <b>software engineering</b> with hands-on <b>construction experience</b>.
+              </p>
 
-            <article className='about__card w-full sm:w-[50%] flex flex-col items-center bg-[#004c4a] border-2 sm:rounded-t-3xl px-4 py-3 text-center'>
-              <FaAward className='about__icon' />
-              <h5>Art & Design High School</h5>
-              <small><BsDot className='about__icon2' />Illustration Major</small>
-            </article>
+              <p className="text-white/70 leading-relaxed">
+                My career has spanned carpentry, construction, software development, illustration, and personal training —
+                shaping a disciplined, detail-oriented, and creative approach to every project.
+              </p>
+
+              <p className="text-white/70 leading-relaxed">
+                Currently advancing expertise in <b className='text-white'>AutoCAD</b>, <b className='text-white'>Primavera P6</b>, <b className='text-white'>Procore</b>,
+                and preparing for <b className='text-white'>CAPM certification</b> and <b className='text-white'>OSHA 30-hour</b>.
+              </p>
+
+              <CTA />
+            </div>
+
+            {/* Right: Education Timeline */}
+            <div className="relative">
+
+              <h3 className="text-sm text-center mb-5 text-white/40">
+                Education
+              </h3>
+              
+
+              {/* Vertical line */}
+              <div className="absolute left-0 top-10 bottom-0 w-px bg-[rgb(245,187,150)]/40" />
+
+              <div className="space-y-16 pl-8">
+
+                {/* Item 1 */}
+                <div className="relative pl-6">
+                  <span className="absolute -left-[20px] top-6"> <FaGraduationCap className="about__icon" /></span>
+
+                  <h3 className="text-2xl font-medium text-[rgb(245,187,150)]">
+                    Hunter College
+                  </h3>
+
+                  <p className="text-[rgb(245,187,150)] text-md mt-1">
+                    Bachelor of Arts in Computer Science · Minor in Mathematics
+                  </p>
+
+                  <p className="text-white/70 mt-4 text-sm leading-relaxed max-w-2xl">
+                    Built a strong analytical and systems-thinking foundation,
+                    developing structured problem-solving skills and technical fluency
+                    that now inform my approach to project coordination and planning.
+                  </p>
+                </div>
+
+                {/* Item 2 */}
+                <div className="relative pl-6">
+                  <span className="absolute -left-[20px] top-6"> <FaAward className="about__icon" /></span>
+
+                  <h3 className="text-2xl font-medium text-[rgb(245,187,150)]">
+                    Art & Design High School
+                  </h3>
+
+                  <p className="text-[rgb(245,187,150)] text-md mt-1">
+                    Illustration Major
+                  </p>
+
+                  <p className="text-white/70 mt-4 text-sm leading-relaxed max-w-2xl">
+                    Developed visual discipline, spatial awareness, and composition —
+                    principles that continue to influence how I structure projects
+                    and think about design execution.
+                  </p>
+                </div>
+
+
+              </div>
+            </div>
 
           </div>
 
-          <div className="gradient-box pt-10 mb-10 px-6 bg-black/20 rounded-b-2xl">
-            <h2 className='font-light'>Hi, I’m <b>Szymon</b></h2>
-            <h4 className='text-sm mb-10'>Pronounced as Shh-mohn, but feel free to call me Simon</h4>
+          
 
-            <p className='font-light text-gray-200'>
-              I'm a New York City-based <b>software engineer</b> and <b>web developer</b> with a passion for building thoughtful, user-focused digital experiences.
-            </p>
+          {/* Divider */}
+          <div className="w-full h-px bg-[rgb(245,187,150)]/20"></div>
 
-            <p className='font-light text-gray-200'>
-              My journey into software development has been anything but typical. With a background in carpentry, construction, painting, illustration, and even personal training, 
-              I bring a unique blend of creativity, discipline, and hands-on problem-solving to every project. 
-              These experiences have shaped how I approach software: not just as code, but as something built with care, function, and purpose.
-            </p>
+          {/* Neat Facts */}
+          <div className=''>
+            <h3 className="text-xl font-medium text-[rgb(245,187,150)] mb-3">
+              Off the Clock
+            </h3>
+            <h4 className='text-sm text-[rgb(245,187,150)]/70 mb-5'>Because Life Isn’t All Code and Blueprints</h4>
 
-            <p className='font-light text-gray-200'>
-              Whether I’m developing full-stack applications or designing intuitive UI systems, 
-              I aim to bridge the gap between logic and creativity — engineering tools that solve real problems and resonate with real people.
-            </p>
-            
-
-
-            <h3 className='font-light mt-10 text-xl'>Neat Facts</h3>
-            <h4 className='text-sm mb-5'>Because Life Isn’t All Code</h4>
-            <p className='font-light text-gray-200'>
-            <ul >
-                <li className='flex flex-row items-center py-2'><BsDot className='about__icon2' />Avid fan of classic RPGs like Baldur’s Gate II and Morrowind</li>
-                <li className='flex flex-row items-center py-2'><BsDot className='about__icon2' />Enthusiast of darker Belgian-style beers (St. Bernardus Tripel is a favorite)</li>
-                <li className='flex flex-row items-center py-2'><BsDot className='about__icon2' />Passionate about weightlifting and long-form fantasy, such as: The Stormlight Archive, LOTR, Lord of Mysteries, and other Chinese web novels</li>
-                <li className='flex flex-row items-center py-2'><BsDot className='about__icon2' />Used to draw and illustrate — now I just sketch in code</li>
+            <ul className="space-y-3 text-white/70">
+              <li className="flex items-start">
+                <BsDot className="about__icon2" />
+                Passionate about weightlifting, fantasy literature & meditation
+              </li>
+              <li className="flex items-start">
+                <BsDot className="about__icon2" />
+                Avid fan of classic RPGs (Baldur’s Gate II, Morrowind)
+              </li>
+              <li className="flex items-start">
+                <BsDot className="about__icon2" />
+                Enthusiast of Belgian Trappist ales
+              </li>
+              <li className="flex items-start">
+                <BsDot className="about__icon2" />
+                Former illustrator — now sketching in code
+              </li>
             </ul>
-
-            <br /><br />
-
-            <a href={CV} target="_blank" rel="noopener noreferrer" className='relative btn z-50'>Download CV</a>
-
-            </p>
           </div>
+
 
         </div>
+
       </div>
 
       <div className='z-10 -mb-16 lg:-mb-36'>

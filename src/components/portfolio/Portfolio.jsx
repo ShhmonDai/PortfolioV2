@@ -131,14 +131,21 @@ const Portfolio = () => {
         {
           dataFeatured.map(({ id, image, gif, title, description1, description2, description3, description4, description5, description6, tech, github, demo, demo_type }) => {
             return (
-              <article key={id} className='portfolio__item featuredItem relative col-span-6 lg:max-w-xl xl:max-w-6xl 2xl:max-w-6xl lg:place-self-center shadow-[0_0_20px_rgba(0,0,0,0.40)]'>
+              <article key={id} onMouseEnter={(e) => {
+                const img = e.currentTarget.querySelector("img");
+                if (img) img.src = gif;
+              }}
+                onMouseLeave={(e) => {
+                  const img = e.currentTarget.querySelector("img");
+                  if (img) img.src = image;
+                }} className='portfolio__item featuredItem relative col-span-6 lg:max-w-xl xl:max-w-6xl 2xl:max-w-6xl lg:place-self-center shadow-[0_0_20px_rgba(0,0,0,0.40)]'>
 
                 <h3 className='absolute -bottom-14 inset-x-0 text-center text-2xl text-[rgb(245,187,150)]'><FaAward/></h3>
 
                 <div className='featuredItem flex flex-col xl:flex-row justify-around lg:justify-center lg:gap-5 xl:gap-10'>
 
                   <div className="portfolio__item-image flex flex-col justify-center items-center">
-                    <img className='' src={image} alt={title} onMouseOver={e => e.currentTarget.src = gif} onMouseOut={e => e.currentTarget.src = image} />
+                    <img className='' src={image} alt={title} />
                     
                     <div className="portfolio__item-cta lg:mt-10  lg:mb-5 hidden xl:flex">
                       <a href={github} className='btn' target='_blank' rel="noreferrer">Github</a>
@@ -149,9 +156,9 @@ const Portfolio = () => {
                   
                   <div className='flex flex-col justify-start xl:max-w-[50%]'>
                     <h3 className='text-[rgb(245,187,150)]'>{title}</h3>
-                    <div className='mb-4 text-zinc-200'>
+                    <div className='mb-4 text-white'>
                       <p> {description1} </p>
-                      <ul className='font-thin text-zinc-200'>
+                      <ul className='font-thin text-white/70'>
                         <li className='mt-3 flex items-center gap-2'><BiCheck className='text-[rgb(245,187,150)] text-2xl w-auto' /> <p className='w-full'>{description2}</p> </li>
                         <li className='mt-3 flex items-center gap-2'><BiCheck className='text-[rgb(245,187,150)] text-2xl w-auto' /> <p className='w-full'>{description3}</p> </li>
                         <li className='mt-3 flex items-center gap-2'><BiCheck className='text-[rgb(245,187,150)] text-2xl w-auto' /> <p className='w-full'>{description4}</p> </li>
@@ -159,7 +166,17 @@ const Portfolio = () => {
                         <li className='mt-3 flex items-center gap-2'><BiCheck className='text-[rgb(245,187,150)] text-2xl w-auto' /> <p className='w-full'>{description6}</p> </li>
                       </ul>
                     </div>
-                    <h4>{tech}</h4>
+                    
+                    <div className="flex flex-wrap gap-2 my-4">
+                      {tech.split(' - ').map((item, index) => (
+                        <span
+                          key={index}
+                          className="text-xs px-3 py-1 rounded-full bg-[rgb(245,187,150)]/10 text-[rgb(245,187,150)] border border-[rgb(245,187,150)]/20"
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
                     <div className="portfolio__item-cta flex lg:mt-10  lg:mb-5 xl:hidden">
                       <a href={github} className='btn' target='_blank' rel="noreferrer">Github</a>
                       <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer">{demo_type}</a>
@@ -178,22 +195,38 @@ const Portfolio = () => {
         {
           data.map(({ id, image, gif, title, description, description2, description3, tech, github, demo, demo_type }) => {
             return (
-              <article key={id} className='portfolio__item'>
+              <article key={id} onMouseEnter={(e) => {
+                const img = e.currentTarget.querySelector("img");
+                if (img) img.src = gif;
+              }}
+                onMouseLeave={(e) => {
+                  const img = e.currentTarget.querySelector("img");
+                  if (img) img.src = image;
+                }} className='portfolio__item'>
                 <div className="portfolio__item-image">
 
-                  <img src={image} alt={title} onMouseOver={e => e.currentTarget.src = gif} onMouseOut={e => e.currentTarget.src = image} />
+                  <img src={image} alt={title} />
                 </div>
                 <h3>{title}</h3>
-                <p className='mb-4 text-zinc-200'> {description} </p>
+                <p className='mb-4 text-white'> {description} </p>
                 
                 {description2 &&
-                  <div className='mb-4 -mt-4 text-zinc-200 text-sm'> 
+                  <div className='mb-4 -mt-4 text-white/55 text-sm'> 
                     <li className='mt-2 flex items-center gap-2'><BiCheck className='text-[rgb(245,187,150)] text-lg w-auto' /> <p className='w-full'>{description2}</p> </li>
                     <li className='mt-2 flex items-center gap-2'><BiCheck className='text-[rgb(245,187,150)] text-lg w-auto' /> <p className='w-full'>{description3}</p> </li>
                   </div>
                 }
 
-                <h4>{tech}</h4>
+                <div className="flex flex-wrap gap-2 my-4">
+                  {tech.split(' - ').map((item, index) => (
+                    <span
+                      key={index}
+                      className="text-xs px-3 py-1 rounded-full bg-[rgb(245,187,150)]/10 text-[rgb(245,187,150)] border border-[rgb(245,187,150)]/20"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
                 <div className="portfolio__item-cta flex">
                   <a href={github} className='btn' target='_blank' rel="noreferrer">Github</a>
                   <a href={demo} className='btn btn-primary' target='_blank' rel="noreferrer">{demo_type}</a>
