@@ -137,8 +137,6 @@
 
     .portfolio__item {
         width: 95vw;
-
-        background: var(--color-bg-variant);
         padding: 1.1rem;
         border-radius: 2rem;
         border: 2px solid transparent;

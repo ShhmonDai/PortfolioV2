@@ -486,7 +486,7 @@ header {
     .card .details .content .social-icons {
         position: relative;
         display: flex;
-        margin-top: 1.5rem;
+        margin-top: 0rem;
     }
 
     .card .details .content .social-icons a {
@@ -662,7 +662,7 @@ header {
    .card2 .details .content .social-icons {
        position: relative;
        display: flex;
-       margin-top: 1.5rem;
+       margin-top: 0rem;
    }
 
    .card2 .details .content .social-icons a {

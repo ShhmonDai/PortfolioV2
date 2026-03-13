@@ -8,7 +8,6 @@ import {FaAward} from 'react-icons/fa'
 import { FaGraduationCap } from 'react-icons/fa' 
 import { FiInstagram } from 'react-icons/fi'
 import { BsDot } from 'react-icons/bs'
-import CV from '../../assets/cv.pdf'
 import CTA from '../header/CTA'
 
 const About = () => {

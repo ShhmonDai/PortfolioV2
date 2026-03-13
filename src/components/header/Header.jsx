@@ -60,13 +60,11 @@ const Header = () => {
           <div className="content">
             <span className="text-light text-xs">Also known as</span>
             <h2>Simon Pozniewski</h2>
-            <h5>Software Developer, Project Manager, Designer, Artist</h5>
-              <h5>Thanks for stopping by — This space is a collection of the things I build, design, and imagine. Take your time, explore, and feel free to jump into whatever catches your eye.
+              <h5>Software Developer · Project Manager · Designer</h5>
+              <h5>I build systems, applications, and ideas with a focus on structure, clarity,
+                and practical problem-solving. My work spans full-stack development,
+                system design, and projects where technology meets real-world execution.
             </h5>
-
-              <h5>Additionally you can check out my:&nbsp;
-                <a href="https://shhmon.blog/" target="_blank" rel="noopener noreferrer">blog!</a> 
-              </h5>
 
 
             <ul className="quickNav">

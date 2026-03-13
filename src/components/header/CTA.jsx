@@ -1,5 +1,6 @@
 import React from 'react'
 import CV from '../../assets/cv.pdf'
+import CV2 from '../../assets/cv2.pdf'
 import { useState, useEffect } from 'react'
 
 
@@ -99,7 +100,7 @@ const CTA = () => {
             </a>
 
             <a
-              href={CV}
+              href={CV2}
               target="_blank"
               rel="noopener noreferrer"
               className="

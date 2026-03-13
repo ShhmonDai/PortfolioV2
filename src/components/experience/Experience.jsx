@@ -20,7 +20,9 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaKey } from "react-icons/fa";
 import { SiP5Dotjs } from "react-icons/si";
 import { SiVite } from "react-icons/si";
-import { TbSql } from 'react-icons/tb'
+import { TbSql } from 'react-icons/tb';
+import { SiAutocad } from "react-icons/si";
+import { PiBlueprintFill, PiMicrosoftExcelLogoFill } from 'react-icons/pi'
 
 
 const Experience = () => {
@@ -159,6 +161,30 @@ const Experience = () => {
           <h3>Tools & Concepts</h3>
           <div className="experience__content">
 
+
+            <article className='experience__details'>
+              <SiAutocad className='experience__details-icon' />
+              <div>
+                <h4>AutoCAD</h4>
+
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <PiBlueprintFill className='experience__details-icon' />
+              <div>
+                <h4>Architectural Blueprints</h4>
+
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <PiMicrosoftExcelLogoFill className='experience__details-icon' />
+              <div>
+                <h4>Excel</h4>
+
+              </div>
+            </article>
 
             <article className='experience__details'>
               <RiFirebaseFill className='experience__details-icon' />
